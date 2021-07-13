@@ -1,0 +1,86 @@
+:root {
+  --color-white: #f3f3f3;
+  --color-darkblue: #0e0e1b;
+  --color-darkblue-alpha: rgba(10, 10, 20, 0.8);
+  --color-green: #37af65;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background-image: linear-gradient( 115deg, rgba(4, 4, 12, 0.8), rgba(136, 136, 206, 0.7) ), url(https://i.pinimg.com/originals/6f/2e/cd/6f2ecd435abb5a406ab2164b1e977504.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-weight: bold;
+}
+
+body h1 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--color-white);
+  
+}
+
+body p {
+  font-family: 'Poppins', sans-serif;
+  color: var(--color-white);
+  font-weight: normal;
+  margin-top: -10px;
+}
+
+body main {
+  background-color: var(--color-darkblue-alpha);
+  border-radius: 8px;
+  padding: 40px;
+}
+
+body label {
+  font-family: 'Poppins', sans-serif;
+  color: var(--color-white);
+  padding: 2px;
+  margin: 2px;
+}
+
+body main form{
+  display: flex;
+  flex-direction: column;
+  max-width: 720px;
+}
+
+body main form input {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+}
+
+body main form textarea {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 8px;
+  text-shadow: none;
+}
+
+body main form #submit {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid var(--color-green);
+  border-radius: 8px;
+  background-color: var(--color-green);
+  color: var(--color-white);
+  font-size: large;
+  font-weight: bold;
+}
+
+body main form #container-radio-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+body main form #checkboxs {
+  display: flex;
+  flex-direction: column;
+}

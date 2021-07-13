@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+
+    <h1 id='title'>ALPHA BARBERSHOP Survey Form</h1>
+
+    <p id='description'><i>Thank you for taking the time to fill our Spa feedback form!</i></p>
+    
+    <main> 
+      <form id='survey-form' action=''>
+        <label id='name-label' for='name'>Name</label>
+        <input type='text' id='name'  name='name' placeholder='Enter your name' required/>
+    
+        <label id='email-label' for='email'>Email</label>
+        <input type='email' id='email' name='email' placeholder='Enter your Email' required/>
+    
+        <label id='number-label' for='number'>Age(optional)</label>
+        <input type='number' id='number' name='number' placeholder='Age' min='1' max='2'/>
+    
+        <label for='dropdown-choice'>How often do you visit ALPHA?</label>
+        <input id='dropdown-choice' list='dropdown' name='dropdown-choice' placeholder='Select visit frequency'/>
+    
+        <datalist id='dropdown'>
+          <option value='Several times a Week'>
+          <option value='Weekly'>
+          <option value='Several times in a Month'>
+          <option value='Monthly'>
+          <option value='This is my First time'>
+        </datalist>
+        <label for='dropdown-choice'>How would you describe the appointment booking process at ALPHA?</label>
+        <input id='dropdown-choice' list='ease' name='dropdown-choice' placeholder='Select ease level'/>
+    
+        <datalist id='ease'>
+          <option value='Easy.'>
+          <option value='Manageable.'>
+          <option value='Frustrating.'>
+        </datalist>
+        <label for='dropdown-choice'>How would you rate our Reception Staff at ALPHA?</label>
+        <input id='dropdown-choice' list='staff' name='dropdown-choice' placeholder='Select staff rating'/>
+    
+        <datalist id='staff'>
+          <option value='Very Nice'>
+          <option value='Nice'>
+          <option value='Neutral'>
+          <option value='Not Nice'>
+          <option value='Difficult'>
+        </datalist>
+        <label for='dropdown-choice'>How would you describe your overall experience at ALPHA?</label>
+        <input id='dropdown-choice' list='experience' name='dropdown-choice' placeholder='Select experience'/>
+    
+        <datalist id='experience'>
+          <option value='Very Satisfactory'>
+          <option value='Satisfactory'>
+          <option value='Neutral'>
+          <option value='Not satisfactory'>
+          <option value='Dissatisfactory'>
+        </datalist>
+    
+        <div id='container-radio-buttons'>
+          <label for='container-radio-buttons'>Would you recommend ALPHA to a friend?</label>
+    
+          <label for='Definitely'><input id='Definitely' name='radios-choices' type='radio' value='Definitely'/> Definitely</label>
+    
+          <label for='Maybe'><input id='Maybe' name='radios-choices' type='radio' value='Maybe' /> Maybe</label>
+    
+          <label for='Not sure'><input id='Not sure' name='radios-choices' type='radio' value='Not sure' /> Not sure</label>
+        </div>
+    
+    
+    
+        <label for='fcc-favorite-service'>What is your favorite service of ALPHA?</label>
+        <input id='fcc-favorite-service' list='services' name='fcc-favorite-service' placeholder='Select an option'/>
+    
+        <datalist id='services'>
+          <option value='Grooming'>
+          <option value='Barber Shop'>
+          <option value='Massage treatments'>
+          <option value='Cigar Lounge'>
+        </datalist>
+    
+        <div id='checkboxs'>
+          <label for='checkboxs'>What would you like to see improved? (Check all that apply)
+          </label>
+    
+          <label for='Booking Process'>
+            <input id='Booking Process' type='checkbox' value='Booking Process' name='checkboxs-choices'/>Booking Process
+          </label>
+    
+          <label for='Customercare'>
+            <input id='Customercare' type='checkbox' value='Customercare' name='checkboxs-choices'/>Customercare (Staff) services
+          </label>
+    
+          <label for='Spa rooms'>
+            <input id='Spa rooms' type='checkbox' value='Spa rooms' name='checkboxs-choices' />Cigar Lounge
+          </label>
+    
+          <label for='Spa procedures'>
+            <input id='Spa procedures' type='checkbox' value='Spa procedures' name='checkboxs-choices'/>Spa procedures
+          </label>
+    
+          
+        </div>
+    
+        <label for='textarea'>Any comments or suggestions?</label>
+        <textarea id='textarea' placeholder='Enter your comment here...'></textarea>
+    
+        <button id='submit' type='submit' >Submit</button>
+      </form>
+    </main>  
+  </body>
+</html>
